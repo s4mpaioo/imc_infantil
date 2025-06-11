@@ -3,13 +3,14 @@
 
 int main() {
 
-    typedef struct paciente_t {
-    char nome{100};
-    char peso;
+    typedef struct Paciente {
+    char nome[100];
     int idade;
+    float peso;
     float altura;
+    char genero;
+    struct Paciente *prox;
+    } paciente_t;
 
-
-    }
-
+    
 }
