@@ -8,7 +8,7 @@ paciente_t * primeiro_paciente(char *nome, int idade, float peso, float altura, 
     paciente_t *paciente = (paciente_t *) malloc(sizeof(paciente_t));
     if (paciente == NULL) {
         printf("Ocorreu um erro na criação da lista de pacientes.");
-        exit(EXIT_FAILURE);
+        return NULL;
     }
     strcpy(paciente->nome, nome);
     paciente->idade = idade;
@@ -41,7 +41,7 @@ void novo_paciente(paciente_t *primeiro, char *nome, int idade, float peso, floa
 void classificar_imc(float imc, int idade, char genero) {
     genero = tolower(genero);
     // feminino
-    if (genero == 'f' || 'F') {
+    if (genero == 'f' || genero == 'F') {
         if (idade == 6) {
             if (imc < 14.3) printf("Abaixo do normal\n");
             else if (imc <= 16.1) printf("Normal\n");
@@ -170,10 +170,8 @@ void exibirPacientes(paciente_t *lista) {
     }
 }
 
-IMCInfantil calcula_imc(paciente_t *paciente_t) {
-    float imc = paciente_t->peso / (paciente_t->altura * paciente_t->altura);
-    int idade = paciente_t->idade;
-    char sexo = tolower(paciente_t->genero);
+    float calcular_imc(paciente_t *paciente_t) {
+    return paciente->peso / (paciente_t->altura *paciente_t->altura);
 }
 
 int main() {
