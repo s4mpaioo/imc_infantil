@@ -170,8 +170,8 @@ void exibirPacientes(paciente_t *lista) {
     }
 }
 
-    float calcular_imc(paciente_t *paciente_t) {
-    return paciente->peso / (paciente_t->altura *paciente_t->altura);
+    float calcular_imc(paciente_t *paciente) {
+    return paciente->peso / (paciente->altura * paciente->altura);
 }
 
 int main() {
