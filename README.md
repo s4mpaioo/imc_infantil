@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# IMC-
-=======
 # IMC Infantil em C
 
 Este projeto em C simula um sistema de avaliação de IMC (Índice de Massa Corporal) para crianças de 6 a 15 anos, com base em idade e gênero. Utiliza estruturas de dados para armazenar pacientes e classifica o IMC de acordo com faixas específicas para meninos e meninas, conforme referências pediátricas.
