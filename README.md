@@ -23,4 +23,4 @@ Use o compilador `gcc` com os seguintes comandos:
 ```bash
 gcc main.c -o imc
 ./imc
->>>>>>> da59d27999dc9a3b0e9eeb86a7cb9c37ed41cca0
+
